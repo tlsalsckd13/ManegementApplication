@@ -11,9 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ManegementApplication">
         <activity android:name=".AppNoticeActivity"></activity>
-        <activity android:name=".StoreQrcodeActivity" />
+        <activity android:name=".MenuActivity" />
         <activity android:name=".StoreMenuActivity" />
-        <activity android:name=".StoreEventActivity" />
+        <activity android:name=".OrderActivity" />
         <activity android:name=".SearchStoreActivity" />
         <activity android:name=".EnrollStoreActivity" />
         <activity android:name=".HomeActivity" />
