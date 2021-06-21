@@ -16,7 +16,7 @@ class LoginRequest(id: String, pw: String, listener: Response.Listener<String?>?
 
     companion object {
         //서버 URL 설정(php 파일 연동)
-        private const val URL = "http://52.78.231.19"
+        private const val URL = "http://52.78.231.192/login.php"
     }
 
     init {
