@@ -36,16 +36,17 @@ class MainActivity : AppCompatActivity() {
                         try {
                             val jsonObject = JSONObject(response)
                             val success = jsonObject.getBoolean("success")
+                            println("${success}")
                             if (success) { //로그인 성공시
                                 val id = jsonObject.getString("id")
                                 val pw = jsonObject.getString("pw")
-                                val store_num = jsonObject.getString("store_num")
+                                val Store_num = jsonObject.getString("Store_num")
                                 Toast.makeText(applicationContext, "로그인 성공", Toast.LENGTH_SHORT)
                                     .show()
                                 val intent = Intent(this@MainActivity, HomeActivity::class.java)
                                 intent.putExtra("id", id)
                                 intent.putExtra("pw", pw)
-                                intent.putExtra("store_num",store_num)
+                                intent.putExtra("Store_num",Store_num)
                                 startActivity(intent)
                             } else { //로그인 실패시
                                 Toast.makeText(applicationContext, "로그인 실패", Toast.LENGTH_SHORT)
